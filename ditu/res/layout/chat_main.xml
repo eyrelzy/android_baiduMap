@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:orientation="vertical" >  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal" 
+        android:layout_weight="1">  
+  		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+            android:layout_weight="1"
+	        android:text="@string/duankouhao" />
+        <EditText  
+            android:id="@+id/Port"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="3"
+            android:text="8888"  
+            android:maxLength="5" >  
+        </EditText>  
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+            android:layout_weight="1"
+	        android:text="@string/IP" />
+        <EditText  
+            android:id="@+id/IP"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="3"
+            android:text="192.168.23.5" 
+            android:maxLength="20" >  
+        </EditText>  
+  
+        <Button
+            android:id="@+id/ChangePort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.98"
+            android:text="修改" />
+  
+    </LinearLayout>  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal" 
+        android:layout_weight="11">  
+	    <EditText  
+	        android:id = "@+id/History"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="fill_parent" 
+   			android:inputType="textMultiLine"
+   			android:gravity="top"
+   			android:textColor="#000000"
+	android:scrollbars="vertical"
+	android:singleLine="false"
+	android:maxLines="22"
+	android:focusable="false"
+	android:clickable="true"
+	        android:editable="false">  
+	    </EditText>  
+      </LinearLayout>  
+  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal" 
+        android:layout_weight="1">  
+  
+        <EditText  
+            android:id="@+id/Message"  
+            android:layout_width="270dp"  
+            android:layout_height="wrap_content" 
+        	android:layout_weight="4">  
+        </EditText>  
+  
+        <Button  
+            android:id="@+id/SendMessage"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="发送" 
+            android:layout_weight="1"/>  
+    </LinearLayout>  
+  
+</LinearLayout>  

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/dingwei"
+        android:orderInCategory="100"
+        
+        android:title="按经纬度定位"/>
+    <item
+        android:id="@+id/miaoshu"
+        android:orderInCategory="100"
+        
+        android:title="按位置描述定位"/>
+    <item
+        android:id="@+id/dangqian"
+        android:orderInCategory="100"
+       
+        android:title="当前位置"/>
+    
+
+</menu>
